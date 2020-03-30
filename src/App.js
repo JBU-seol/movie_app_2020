@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from "prop-types";
 import axios from "axios";
 
 import Movie from "./Movie";
@@ -51,14 +50,5 @@ class App extends React.Component {
   }
 }
 
-// function App() {
-//   return (
-//     <div className="App">
-//     {famousPeople.map( obj => 
-//         <Introduce key={obj.id} name={obj.name} pic={obj.img} rating={obj.rating} />
-//       )}
-//     </div>
-//   );
-// }
 
 export default App;
