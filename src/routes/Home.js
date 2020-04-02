@@ -4,6 +4,8 @@ import axios from "axios";
 import Movie from "../components/Movie";
 import "./Home.css";
 
+// redux 이용하여 매번 Loading을 기다려야하는 불편함을 없앨 수 있다.
+
 class Home extends React.Component {
     state = {
         isLoading: true,
@@ -35,6 +37,7 @@ class Home extends React.Component {
               {movies.map( movie =>
                  <Movie 
                  key={movie.id} 
+                 id={movie.id}
                  year={movie.year} 
                  title={movie.title} 
                  summary={movie.summary} 
